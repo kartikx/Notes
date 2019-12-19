@@ -1,4 +1,5 @@
-**1. vector<int>::size_t and Templates**
+## 1. vector<int>::size_t and Templates
+
 
  You've probably seen this in a lot of good code:
 
@@ -30,3 +31,8 @@
  
 Also when we use template functions, we restrict the use of that function by only those data types that conform to any constraints imposed by operators used within that function definition.
  
+
+## 2. Iterators 
+
+
+1. Input Iterators - Allow sequential access of their containers, and an equivalence between ```*it.member``` and ```it->member```
