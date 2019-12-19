@@ -35,6 +35,20 @@ Also when we use template functions, we restrict the use of that function by onl
 ## 2. Iterators 
 
 
-**1.Input Iterators: **
+### Input Iterators:
 
 Allow sequential access of their containers, and an equivalence between ```*it.member``` and         ```it->member```
+
+###  Output Iterators:
+
+Apart from accessing sequentially, allow you to write to the values. Furthermore, they impose a constraint that you shouldn't incrememnt the iterator twice, you should follow an incremement, assign, incremement, assign procedure.
+Eg.
+```cpp	
+	*it = x;	
+	it++;
+	it++;
+	*it = y;
+```
+
+If this is allowed, then the container will have gaps of missing values, in between.
+
