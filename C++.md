@@ -35,4 +35,6 @@ Also when we use template functions, we restrict the use of that function by onl
 ## 2. Iterators 
 
 
-1. Input Iterators - Allow sequential access of their containers, and an equivalence between ```*it.member``` and ```it->member```
+**1.Input Iterators: **
+
+Allow sequential access of their containers, and an equivalence between ```*it.member``` and         ```it->member```
