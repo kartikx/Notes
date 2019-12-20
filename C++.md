@@ -57,3 +57,9 @@ If this is allowed, then the container will have gaps of missing values, in betw
 It is useful to pass arguments as reference, to prevent waste of memory in copying, however it has a risk of modifying the global values. Hence we used const reference arguments to get the best of both.
 	
 	 void foo(const int& arg); 
+	 
+Similarly, declaring a pointer argument const tells readers that the value of an object pointed to by
+that argument is not changed by the function.
+
+	int strlen(const char*);
+
