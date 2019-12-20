@@ -52,3 +52,8 @@ Eg.
 
 If this is allowed, then the container will have gaps of missing values, in between.
 
+## 3. Function Arguments
+
+It is useful to pass arguments as reference, to prevent waste of memory in copying, however it has a risk of modifying the global values. Hence we used const reference arguments to get the best of both.
+	
+	 void foo(const int& arg); 
